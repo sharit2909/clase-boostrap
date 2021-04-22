@@ -22,40 +22,46 @@
           <div class="navbar-nav ml-auto">
             <a class="nav-link  " href="./index.html">inicio</span></a>
             <a class="nav-link " href="./alertas.html">alertas</span></a>
-            <a class="nav-link " href="./botones.html">botones</span></a>
-            <a class="nav-link active" href="./tarjetas.html">tarjetas</span></a>
+            <a class="nav-link active" href="./botones.html">botones</span></a>
+            <a class="nav-link " href="./tarjetas.html">tarjetas</span></a>
           </div>
         </div>
       </nav>
 
-      <!--iniciar sesion-->
+      <!--formulario-->
       <div class="d-flex justify-content-center">
-        <div class="col-md-5 border p-5 my-5">
-          <h1>Iniciar sesion</h1>
-          <form >
+        <div class=" col-md-5 border p-5 mt-3 my-3">
+          <form>
+              <div class="form-group">
+                  <label for="user">Nombre completo</label>
+                  <input  riquired type="text" class="form-control" id="user" aria-describedby="userHelp">
+                  <small id="userHelp" class="form-text text-muted"> Escribe tu nombre completo</small>
+              </div>
+              <div class="form-group">
+                  <label for="userId">Número de identificación</label>
+                  <input required type="text" class="form-control" id="userId" aria-describedby="idHelp">
+                  <small id="idHelp" class="form-text text-muted">Escribe tu documento de identificacion</small>
+              </div>
             <div class="form-group">
               <label for="email">correo electronico</label>
-              <input required type="email" class="form-control" id="email" aria-describedby="emailhelp">
-              <small id="emailhelp" class="form-text text-muted">Escribe tu direccion de correo electronico</small>
-            </div>
-
-            <div class="form-group">
-              <label for="passwd">Contraseña</label>
-              <input required type="passwd" class="form-control" id="passwd" aria-describedby="passwdhelp">
-              <small id="passwdhelp" class="form-text text-muted">Ingresa tu contraseña</small>
-            </div>
-
-            <div class="check-container">
-              <input type="checkbox" name="remember" id="remember">
-              <label for="remember">Recordar contraseña</label>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-block">Iniciar Sesion</button>
+              <input riquired type="email" class="form-control" id="email" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">Escribe la direccion de tu correo electronico</small>
+              <div class="form-group">
+                <label for="password">contaseña</label>
+                <input required type="text" class="form-control" id="password" aria-describedby="passwordHelp">
+                <small id="passwordHelp" class="form-text text-muted">Escribe tu contraseña</small>
+                <div class="form-group">
+                  <label for="passwdConfirm">Confirmar Contraseña</label>
+                  <input required type="password" class="form-control" id="passwdConfirm" aria-describedby="passwConfirmdHelp">
+                  <small id="passwdConfirmHelp" class="form-text text-muted">Confirmar tu contraseña</small>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">registrarme</button>
           </form>
-
-        </div> 
-
       </div>
+    </div>
+    
+
+
       
 
     <!-- Optional JavaScript; choose one of the two! -->
